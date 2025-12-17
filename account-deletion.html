@@ -8,57 +8,179 @@
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             line-height: 1.6;
-            color: #333;
+            color: #2d3748;
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
-            background-color: #f8f9fa;
+            background-color: #f7fafc;
         }
         .container {
-            background: #fff;
+            background: #ffffff;
             border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
             padding: 40px;
-            margin: 20px 0;
+            margin: 40px auto;
+            border: 1px solid #e2e8f0;
         }
         h1 {
             color: #6A11CB;
             margin-bottom: 10px;
             font-size: 2.2em;
+            font-weight: 700;
         }
-        h2 {
-            color: #2d3748;
-            margin-top: 30px;
-            margin-bottom: 15px;
-            font-size: 1.5em;
-        }
-        p {
-            margin-bottom: 16px;
-            font-size: 1.05em;
-            color: #4a5568;
-        }
-        .warning-box {
-            background-color: #fff5f5;
+        .warning {
+            background: #fff5f5;
             border-left: 4px solid #e53e3e;
-            padding: 16px;
-            margin: 25px 0;
-            border-radius: 0 8px 8px 0;
-        }
-        .info-box {
-            background-color: #ebf8ff;
-            border-left: 4px solid #3182ce;
-            padding: 16px;
+            padding: 20px;
             margin: 25px 0;
             border-radius: 0 8px 8px 0;
         }
         .steps {
-            background: #f7fafc;
+            background: #f8fafc;
             padding: 20px;
             border-radius: 8px;
-            margin: 20px 0;
+            margin: 25px 0;
             border: 1px solid #e2e8f0;
         }
         .step {
             margin-bottom: 15px;
             display: flex;
-            align-items: flex
+            align-items: flex-start;
+        }
+        .step-number {
+            background: #6A11CB;
+            color: white;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 12px;
+            flex-shrink: 0;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .step-content {
+            flex: 1;
+        }
+        .note {
+            background: #f0f9ff;
+            border-left: 4px solid #0ea5e9;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .btn {
+            display: inline-block;
+            background: #6A11CB;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            margin: 10px 0;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .btn:hover {
+            background: #4d0d8f;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(106, 17, 203, 0.2);
+        }
+        .btn-outline {
+            background: transparent;
+            border: 2px solid #6A11CB;
+            color: #6A11CB;
+        }
+        .btn-outline:hover {
+            background: #f5f3ff;
+        }
+        .logo {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .logo img {
+            height: 50px;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+                margin: 20px 10px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="https://your-app-logo-url.png" alt="Eventify Logo">
+        </div>
+        
+        <h1>Account Deletion Request</h1>
+        
+        <div class="warning">
+            <strong>Important:</strong> This action is permanent and cannot be undone. All your data will be permanently deleted from our systems.
+        </div>
+
+        <h2>How to Delete Your Account</h2>
+        <p>You can delete your account directly from the Eventify mobile app by following these steps:</p>
+        
+        <div class="steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <div class="step-content">Open the Eventify app on your device</div>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <div class="step-content">Go to your Profile screen (tap your profile icon in the bottom right)</div>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <div class="step-content">Scroll down and tap on "Delete Account" (in red)</div>
+            </div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <div class="step-content">Enter your password to confirm your identity</div>
+            </div>
+            <div class="step">
+                <div class="step-number">5</div>
+                <div class="step-content">Tap "Delete Account" to permanently delete your account</div>
+            </div>
+        </div>
+
+        <div class="note">
+            <h3>What happens when you delete your account:</h3>
+            <ul>
+                <li>Your profile information will be permanently removed</li>
+                <li>All your events and event history will be deleted</li>
+                <li>You will be removed from all groups and conversations</li>
+                <li>This action cannot be undone</li>
+                <li>Some data may be retained for legal or legitimate business purposes</li>
+            </ul>
+        </div>
+
+        <h2>Need Help?</h2>
+        <p>If you're having trouble deleting your account or have any questions, our support team is here to help.</p>
+        <p>email: villafuertetaro@gmail.com</p>
+        
+        <p>
+            <a href="mailto:support@eventifyapp.com" class="btn">Contact Support</a>
+            <a href="https://eventifyapp.com" class="btn btn-outline">Back to Home</a>
+        </p>
+
+        <div style="margin-top: 40px; padding-top: 20px; border-top: 1px solid #e2e8f0; font-size: 14px; color: #718096;">
+            <p>© 2025 Eventify. All rights reserved.</p>
+            <p>
+                <a href="/privacy-policy" style="color: #6A11CB; text-decoration: none; margin-right: 15px;">Privacy Policy</a>
+                <a href="/terms" style="color: #6A11CB; text-decoration: none;">Terms of Service</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
